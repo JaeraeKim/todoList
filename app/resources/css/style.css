@@ -183,6 +183,10 @@
 		border-radius:11px;
 		border:1.5px solid #26b999;
 		
+		-webkit-transition:background 0.2s ease;
+		-moz-transition:background 0.2s ease;
+		-ms-transition:background 0.2s ease;
+		-o-transition:background 0.2s ease;
 		transition:background 0.2s ease;
 	}
 	
@@ -226,4 +230,26 @@
 	
 	ul.todo li .buttons button.done:hover svg .fill {
 		fill:#26B999;
+	}
+	
+	ul.todo#todo {
+		position:relative;
+	}
+	
+	ul.todo#completed:not(:empty) {
+		position:relative;
+		padding:60px 0 0 0;
+		background:#000;
+		opacity:0.3;
+	}
+	
+	ul.todo#completed:not(:empty):before {
+		content:'';
+		width:150px;
+		height:1px;
+		background:#fff;
+		position:absolute;
+		top:30px;
+		left:50%;
+		margin:0 0 0 -75px;
 	}
