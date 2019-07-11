@@ -1,3 +1,3 @@
 # todoList
 
-Making a To-Do list application following [this](https://www.youtube.com/watch?v=2wCpkOk2uCg) tutorial.
+To-Do list application made following [this](https://www.youtube.com/watch?v=2wCpkOk2uCg) tutorial
