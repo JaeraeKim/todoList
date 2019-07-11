@@ -109,7 +109,7 @@
 	}
 	
 	ul.todo {
-		width:100%
+		width:100%;
 		float:left;
 	}
 	
@@ -125,7 +125,7 @@
 		background:#fff;
 		border-radius:5px;
 		position:relative;
-		box-shadow:0px 2px 4px rgba(44, 62, 80, 0.10);
+		box-shadow:0px 1px 2px rgba(44, 62, 80, 0.10);
 		margin:0 0 10px 0;
 		padding:14px 100px 14px 14px;
 	}
@@ -199,15 +199,15 @@
 	ul.todo:not(#completed) li .buttons button.done:hover svg {
 		background:rgba(37, 185, 154, 0.75);
 	}
-	
-	ul.todo#completed li .buttons button.done svg .fill {
-		fill:#fff;
-	}
-	
+		
 	ul.todo:not(#completed) li .buttons button.done:hover svg .fill {
 		fill:#fff;
 	}
 	
+	ul.todo#completed li .buttons button.done svg .fill {
+		fill:#fff;
+	}
+
 	ul.todo li .buttons button svg .fill {
 		-webkit-transition:fill 0.2s ease;
 		-moz-transition:fill 0.2s ease;
@@ -232,24 +232,18 @@
 		fill:#26B999;
 	}
 	
-	ul.todo#todo {
-		position:relative;
-	}
-	
 	ul.todo#completed:not(:empty) {
 		position:relative;
-		padding:60px 0 0 0;
-		background:#000;
-		opacity:0.3;
+		margin:60px 0 0 0;
 	}
-	
+
 	ul.todo#completed:not(:empty):before {
 		content:'';
 		width:150px;
 		height:1px;
-		background:#fff;
+		background:#d8e5e0;
 		position:absolute;
-		top:30px;
+		top:-30px;
 		left:50%;
 		margin:0 0 0 -75px;
 	}
